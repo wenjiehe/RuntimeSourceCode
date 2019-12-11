@@ -14,11 +14,13 @@
 
 1. 报错信息如下：
 
-   * Build target objc:The i386 architecture is deprecated. You should update your ARCHS build setting to remove the i386 architecture.
-   * Build target objc-trampolines:The i386 architecture is deprecated. You should update your ARCHS build setting to remove the i386 architecture.
-    
-   * 解决方法：TARGETS->objc->Build Settings->Architectures->&(ARCHS_STANDARD_32_64_BIT)改为Standard Architectures(64-bit Intel)
-   * 同理，objc-trampolines也如此
+* Build target objc:The i386 architecture is deprecated. You should update your ARCHS build setting to remove the i386 architecture.
+* Build target objc-trampolines:The i386 architecture is deprecated. You should update your ARCHS build setting to remove the i386 architecture.
+   
+```
+解决方法：TARGETS->objc->Build Settings->Architectures->&(ARCHS_STANDARD_32_64_BIT)改为Standard Architectures(64-bit Intel)
+同理，objc-trampolines也如此
+```
         
    * can't open order file: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/AppleInternal/OrderFiles/libobjc.order
         
@@ -83,12 +85,12 @@
         
    * 解决方法:在dyld_priv.h文件头部添加宏
     
-(```
-    #define DYLD_MACOSX_VERSION_10_11 0x000A0B00
-    #define DYLD_MACOSX_VERSION_10_12 0x000A0C00
-    #define DYLD_MACOSX_VERSION_10_13 0x000A0D00
-    #define DYLD_MACOSX_VERSION_10_14 0x000A0E00
-(```
+```
+#define DYLD_MACOSX_VERSION_10_11 0x000A0B00
+#define DYLD_MACOSX_VERSION_10_12 0x000A0C00
+#define DYLD_MACOSX_VERSION_10_13 0x000A0D00
+#define DYLD_MACOSX_VERSION_10_14 0x000A0E00
+```
 
 ## 调试Runtime
 
