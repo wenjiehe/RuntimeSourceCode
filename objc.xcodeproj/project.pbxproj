@@ -38,8 +38,7 @@
 		39ABD72412F0B61800D1054C /* objc-weak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 39ABD72012F0B61800D1054C /* objc-weak.mm */; };
 		3D532B652392F0D3009D2314 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D532B622392EE8D009D2314 /* libobjc.A.tbd */; };
 		3D532B6D2392F19A009D2314 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D532B6C2392F19A009D2314 /* main.m */; };
-		3D532B742392F2A7009D2314 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
-		3D532B752392F38B009D2314 /* libobjc.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D532B622392EE8D009D2314 /* libobjc.A.tbd */; };
+		3D8F310923ABEF680087B05C /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
 		3DE06CD32377DC5400AE7DB8 /* CrashReporterClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE06CBF2377DC5400AE7DB8 /* CrashReporterClient.h */; };
 		3DE06CD42377DC5400AE7DB8 /* isa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE06CC02377DC5400AE7DB8 /* isa.h */; };
 		3DE06CD52377DC5400AE7DB8 /* Block_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE06CC12377DC5400AE7DB8 /* Block_private.h */; };
@@ -55,6 +54,7 @@
 		3DE06CDF2377DC5400AE7DB8 /* objc-shared-cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE06CD02377DC5400AE7DB8 /* objc-shared-cache.h */; };
 		3DE06CE02377DC5400AE7DB8 /* dyld_priv.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE06CD22377DC5400AE7DB8 /* dyld_priv.h */; };
 		3DE06CE62378F7A400AE7DB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE06CE52378F7A400AE7DB8 /* Foundation.framework */; };
+		3DE3497823A694470046F38B /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE3497723A694470046F38B /* People.m */; };
 		7593EC58202248E50046AB96 /* objc-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 7593EC57202248DF0046AB96 /* objc-object.h */; };
 		75A9504F202BAA0600D7D56F /* objc-locks-new.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A9504E202BAA0300D7D56F /* objc-locks-new.h */; };
 		75A95051202BAA9A00D7D56F /* objc-locks.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A95050202BAA9A00D7D56F /* objc-locks.h */; };
@@ -198,6 +198,8 @@
 		3DE06CD02377DC5400AE7DB8 /* objc-shared-cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "objc-shared-cache.h"; sourceTree = "<group>"; };
 		3DE06CD22377DC5400AE7DB8 /* dyld_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dyld_priv.h; sourceTree = "<group>"; };
 		3DE06CE52378F7A400AE7DB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3DE3497623A694470046F38B /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		3DE3497723A694470046F38B /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		7593EC57202248DF0046AB96 /* objc-object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-object.h"; path = "runtime/objc-object.h"; sourceTree = "<group>"; };
 		75A9504E202BAA0300D7D56F /* objc-locks-new.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "objc-locks-new.h"; path = "runtime/objc-locks-new.h"; sourceTree = "<group>"; };
 		75A95050202BAA9A00D7D56F /* objc-locks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-locks.h"; path = "runtime/objc-locks.h"; sourceTree = "<group>"; };
@@ -295,8 +297,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D532B752392F38B009D2314 /* libobjc.A.tbd in Frameworks */,
-				3D532B742392F2A7009D2314 /* libobjc.A.dylib in Frameworks */,
+				3D8F310923ABEF680087B05C /* libobjc.A.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +404,8 @@
 			isa = PBXGroup;
 			children = (
 				3D532B6C2392F19A009D2314 /* main.m */,
+				3DE3497623A694470046F38B /* People.h */,
+				3DE3497723A694470046F38B /* People.m */,
 			);
 			path = runtimeTest;
 			sourceTree = "<group>";
@@ -804,6 +807,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE3497823A694470046F38B /* People.m in Sources */,
 				3D532B6D2392F19A009D2314 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
